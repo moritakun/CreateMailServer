@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="4Ej2GPamKhuRNfQTGh9E" name="ページ1">
-        <mxGraphModel dx="733" dy="481" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+        <mxGraphModel dx="1084" dy="778" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -55,7 +55,7 @@
                 <mxCell id="23" style="edgeStyle=none;jumpSize=16;html=1;strokeColor=#000000;strokeWidth=2;endArrow=block;endFill=1;" parent="7" source="17" target="20" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;endArrow=block;endFill=1;" edge="1" parent="7" source="48" target="36">
+                <mxCell id="43" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;dashed=1;endArrow=block;endFill=1;" parent="7" source="48" target="36" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <Array as="points">
                             <mxPoint x="161" y="207"/>
@@ -63,7 +63,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="44" value="22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="43">
+                <mxCell id="44" value="22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="43" vertex="1" connectable="0">
                     <mxGeometry x="0.049" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
@@ -99,7 +99,7 @@
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="48" value="Route table" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.route_table;html=1;" vertex="1" parent="7">
+                <mxCell id="48" value="Route table" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4D27AA;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.route_table;html=1;" parent="7" vertex="1">
                     <mxGeometry x="104" y="184" width="47.21" height="46" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" value="&lt;font color=&quot;#000000&quot;&gt;Internet&lt;/font&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.internet_2;fillColor=#D2D3D3;gradientColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=default;" parent="1" vertex="1">
@@ -108,8 +108,37 @@
                 <mxCell id="19" style="edgeStyle=none;html=1;strokeColor=#000000;jumpSize=15;strokeWidth=2;endArrow=block;endFill=1;exitX=1;exitY=0.7;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="14" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Hiragino Kaku Gothic ProN&amp;quot;, &amp;quot;ヒラギノ角ゴ ProN W3&amp;quot;, メイリオ, Meiryo, sans-serif; font-size: 13px; text-align: start;&quot;&gt;aws-mail-server@awsforstudy-hiro.com&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="21.25" y="92" width="269" height="28" as="geometry"/>
+                <mxCell id="52" value="&lt;span style=&quot;color: rgb(51, 51, 51); font-family: &amp;quot;Hiragino Kaku Gothic ProN&amp;quot;, &amp;quot;ヒラギノ角ゴ ProN W3&amp;quot;, メイリオ, Meiryo, sans-serif; font-size: 13px; text-align: start;&quot;&gt;aws-mail-server@awsforstudy-hiro.com&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=0;" parent="1" vertex="1">
+                    <mxGeometry x="26" y="68" width="269" height="28" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="cGQDAjMAQgf0LGddcexY" name="ページ2">
+        <mxGraphModel dx="1084" dy="778" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="ndZguL83fXOaLFQstnfY-1" value="Postfix（送信転送）&lt;br style=&quot;font-size: 16px;&quot;&gt;設定ファイルmain.cf編集" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;fontColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="179" y="129" width="297" height="183" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-6" value="メールサーバ内部構成" style="text;html=1;strokeColor=#000000;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=2;fontSize=21;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="369" y="14" width="432" height="57" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-7" value="telnet（サーバ間通信）&lt;br style=&quot;font-size: 16px;&quot;&gt;Postfixに対してSMTPコマンドを利用し&lt;br&gt;メール送信御確認を行う" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;fontColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="708" y="129" width="327" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-8" value="Dovecot（受信）" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fillColor=none;fontColor=#000000;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="175" y="430" width="297" height="183" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-9" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FF3333;strokeWidth=10;fontSize=16;fontColor=#ffffff;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="145" y="92" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-11" value="" style="triangle;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=10;fontSize=16;fontColor=#000000;fillColor=none;direction=north;" vertex="1" parent="1">
+                    <mxGeometry x="676" y="92" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ndZguL83fXOaLFQstnfY-12" value="" style="shape=cross;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=10;fontSize=16;fontColor=#000000;fillColor=none;size=0.07635413275824873;direction=south;rotation=45;" vertex="1" parent="1">
+                    <mxGeometry x="138" y="391" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

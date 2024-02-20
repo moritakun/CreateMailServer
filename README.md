@@ -249,10 +249,84 @@ IMAP4は、ブラウザを通してサーバーに直接メールを読み込み
       ```text
       ss -atn | grep 25
       ```
-9.  メールユーザ作成
+9.  メールユーザー作成 <br>
+メール受信用にユーザーを作成していきます。<br>
+まずは新規ユーザー追加時に自動でMaildir形式メールボックス作成するように設定します。
+      ```text
+      sudo mkdir -p /etc/skel/Maildir/{new,cur,tmp}
+      ```
+10. メールボックスのパーミッションを変更します。
+      ```text
+      chmod -R 700 /etc/skel/Maildir/
+      ```
+11. ユーザを作成
+      ```text
+      adduser hiro-mail
+      ```
+      ※useraddではありません。
+12. PWの設定
+      ```text
+      passwd hiro-mail
+      ```
+      ※設定値は任意。
+13. PW設定後に、先ほどの作成したディレクトリがユーザ配下に作成されていることを確認する
+      ```text
+      ll /home/hiro-mail/Maildir/
+      ```
+      ※ディレクトリが作成されていない場合や<br>
+      /home/配下にユーザディレクトリが作成されていない場合は、「useradd」でユーザを作成している可能性があります。
+
+### Postfix動作確認
+ローカル環境下のメールテストを行うため telnet をインストールします。
+
+#### telnetとは。
+telnet でサーバへ接続すると、サーバを直接操作できるようになります。
+telnetでメールサーバに接続し、メールサーバから直接メールを送信することでメールサーバが正常に動作していることを確認します。
+
+1. telnetをインストールします。
+   ```text
+   apt install telnet
+   ```
+   ※centosは、「yum」
+2. 自身のメールサーバに接続
+   ```text
+   telnet localhost 25
+   ```
+   ※接続に成功すればコード220の応答があります。
+3. SMTPコマンドでheloを使用し、自分のメールサーバとセッションを開始して、送信元メールアドレスを確認する
+   ```text
+   helo localhost
+   ```
+   ※実行成功すると、「250 *******.com」が返ってくる
+4. mail from: コマンドで送信元メールアドレスを入力します。
+   ```text
+   mail from:aws-mail-server.awsforstudy-hiro.com
+   ```
+   ※実行成功すると、「250 2.1.0 ok」が返ってくる
+5. rcpt to: コマンドで送信先メールアドレスを入力します。
+   ```text
+   rcpt to:aws-mail-server.awsforstudy-hiro.com
+   ```
+6. hoge
 
 
+## Ubuntuでuseraddでホームディレクトリが作成されない場合
 
+[参考](https://ex1.m-yabe.com/archives/3259)
+
+Ubutnuは標準でホームディレクトリを作成する設定ではありません。
+
+ホームディレクトリを作成するのは「/etc/login.defs」内に設定がありますが、Ubuntuだと「CREATE_HOME yes」の設定がないのでホームディレクトリが作成されないとのことです。
+
+そのため、Ubuntuでは「useradd」ではなく、「adduser」を使用する。
+adduserコマンドを利用すると、PW発行からホームディレクトリ作成まで対話式に進められる。
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ============postfixインストール時に聞かれるやつ===================
 
 Please select the mail server configuration type that best meets your needs.
